@@ -6,4 +6,4 @@ RUN  go build fc_go.go
 FROM scratch
 WORKDIR /workspaces/fc_docker_go
 COPY --from=builder /workspaces/fc_docker_go .
-#RUN ./fc_go
+CMD [ "./fc_go" ]
